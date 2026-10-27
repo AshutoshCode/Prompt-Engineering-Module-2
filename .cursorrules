@@ -1,0 +1,26 @@
+# .cursorrules - project rules for AI-Assisted Programming (Module 2)
+
+## Project context
+- Small student repo: C programs, their Python conversions, LeetCode solutions and a
+  debugging exercise. Python 3.10+ and standard library only (unittest, dataclasses).
+
+## Coding style
+- Python: follow PEP 8, add type hints and a one-line docstring to every function.
+- Use f-strings, never string concatenation or % formatting.
+- C: C99, compile cleanly with `gcc -Wall -Wextra`, no global variables.
+- Prefer clear names over comments; comment only the "why".
+
+## Behaviour
+- When converting C to Python, keep the same program output and say what changed
+  (for example: no integer overflow, dataclass instead of struct).
+- Explain a bug before fixing it, then fix the cause, not the symptom.
+- Never edit tests to make them pass; fix the code instead.
+- Show how to run any code you add (exact command).
+
+## Testing
+- Every new function gets a unittest case, including an empty or boundary input.
+- Run `python -m unittest` before saying a change is done.
+
+## Git
+- Commit messages: imperative mood, subject under 72 characters, optional body
+  explaining why. Example: "Fix off-by-one in highest()".
